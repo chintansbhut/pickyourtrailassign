@@ -1,0 +1,18 @@
+.destinationList {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 400px;
+  width: 100%;
+}
+.destinationContainer {
+  display: flex;
+  height: 30%;
+}
+.vacationlist {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 200px;
+  width: 100%;
+}
