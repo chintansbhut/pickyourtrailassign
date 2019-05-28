@@ -26,7 +26,7 @@ export default class Itineraries extends React.Component{
     
         return (
         <div className="displayflex_c border">
-          {Object.keys(itineraryMap).map((data, index)=>(
+          {Object.keys(itineraryMap).sort().map((data, index)=>(
               <div className="flexContainer" key = {index}>
             <div className="w5p" name={data} id={data}>{data}</div>
            
