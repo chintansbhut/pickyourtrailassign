@@ -1,18 +1,96 @@
 .destinationList {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
-  height: 400px;
   width: 100%;
 }
 .destinationContainer {
   display: flex;
   height: 30%;
+  border-top: 1px dotted;
+    padding-top: 1rem;
 }
+.destinationItem{
+  display: inline-block;
+  width: 25%;
+  text-decoration: none;
+    color: #9E9E9E;
+    padding-bottom: 10px;
+
+}
+
 .vacationlist {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
-  height: 200px;
   width: 100%;
+}
+.vacationItem{
+  display: inline-block;
+  width:25%;
+  text-decoration: none;
+    color: #9E9E9E;
+    padding-bottom: 10px;
+
+}
+.menuItem{
+  display: flex;
+    flex-direction: row;
+    width: 100%;
+   
+}
+.flexItem{
+  flex:1;
+}
+.displayflex_c{
+display: flex;
+    flex-direction: column;
+}
+
+.flexContainer{
+  display: flex;
+}
+.w5p{
+  width: 5%;
+}
+.itineraryList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+ 
+  width: 100%;
+ 
+}
+.itineraryitem{
+  display: inline-block;
+  width: 50%;
+  text-decoration: none;
+    color: #9E9E9E;
+    padding-bottom: 10px;
+
+
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.border{
+  border-top: 1px dotted;
+    padding-top: 1rem;
+}
+a:hover{
+  color:blue;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px){
+  .destinationItem{  
+    width: 100%;
+  }
+  .itineraryitem{
+    width: 100%;
+  }
+  .vacationItem{
+    width:100%;
+  }
 }

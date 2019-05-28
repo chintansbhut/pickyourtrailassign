@@ -5,7 +5,7 @@ export default class Theamedvacation extends React.Component {
     return (
       <div className="vacationlist">
         {vacationsData.map(data => (
-          <a href={data.url}>{data.text}</a>
+          <a href={data.url} className="vacationItem">{data.text}</a>
         ))}
       </div>
     );

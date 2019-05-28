@@ -3,7 +3,7 @@ import * as data from "./sample.json";
 import "./App.css";
 import Destination from "./Components/Destinations";
 import Theamedvacation from "./Components/TheamedVacations";
-import Allitineraries from "./Components/All";
+import Itineraries from "./Components/Itineraries";
 import _ from "lodash";
 class App extends React.Component {
   state = { destination: [], theamedVacations: [], all: null };
@@ -40,15 +40,15 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <h4>Pickyourtrail stiemap</h4>
-        <div> Destination</div>
+        <h2>Pickyourtrail stiemap</h2>
+        <h4> Destination</h4>
         <Destination destinations={this.state.destination} />
         <hr />
-        <div>Themed Vacation</div>
+        <h4>Themed Vacation</h4>
         <Theamedvacation theamedVacation={this.state.theamedVacations} />
         <hr />
-        <div>Showing all 340 pages</div>
-        <Allitineraries all={this.state.all} />
+        <h4>Showing all 340 pages</h4>
+        <Itineraries all={this.state.all} />
         <hr />
       </div>
     );
